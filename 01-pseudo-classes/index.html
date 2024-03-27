@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-Classes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Pseudo-Classes</h1>
+
+    <h2>:First-child</h2>
+
+    <p>Estiliza todos os primeiros filhos de determinado elemento. Como o seletor "p", além da pseudo-classe
+        "first-child" também tem a pseudo-classe "last-child", tanto essa div quanto a div abaixo ficaram iguais.
+    </p>
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. At veritatis magnam non dolor porro. Porro dolores
+            perspiciatis quo a, blanditiis qui dolor. Molestiae, alias tenetur! Sapiente ipsa adipisci animi aspernatur.
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur et suscipit officia accusantium saepe
+            temporibus qui, eum ipsum totam unde nihil non accusamus architecto expedita, dolores distinctio consequatur
+            dolorem consequuntur.
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur et suscipit officia accusantium saepe
+            temporibus qui, eum ipsum totam unde nihil non accusamus architecto expedita, dolores distinctio consequatur
+            dolorem consequuntur.
+        </p>
+    </div>
+
+    <h2>:Last-child</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi totam vel aperiam alias voluptatem. Ipsum enim
+        nulla maiores commodi, saepe magni quidem eveniet? Maxime est quaerat sit iste facere tempora?
+    </p>
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus ipsam culpa temporibus praesentium possimus
+            aut nobis animi eum. Error maxime natus ex explicabo totam similique perferendis magnam eveniet praesentium
+            odit?
+        </p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis reiciendis ipsa id sunt a rem facere
+            sint, consequuntur veniam qui, inventore quam maxime corrupti nulla doloremque? Neque animi vel dolorem!
+        </p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor deserunt at recusandae veritatis consequuntur
+            nulla fugit distinctio velit facilis, aspernatur accusantium dolorem animi eveniet quidem perspiciatis nemo
+            mollitia placeat quam.
+        </p>
+    </div>
+
+    <h2>:nth-child</h2>
+    <p>A pseudo-classe nth-child() pode assumir diferentes parâmetros "even", que estiliza todos os elementos pares
+        filhos de outro elemento.
+    </p>
+
+    <div>
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+        </ul>
+    </div>
+
+    <h2>nth-last-child</h2>
+    <p>Diferente da :nth-child, esta pseudo-classe começa sua contagem do último pro primeiro filho.
+    </p>
+
+    <h2>:not()</h2>
+    <p>Estiliza todos os elemtnos (por exemplo, parágrafos ou divs) que não tiverem determinada classe. No exemplo
+        abaixo apenas o Item 2 possui a classe "teste", o foi escolhida para não ser estilizada.
+    </p>
+
+    <div>
+        <ul>
+            <li>Item 1</li>
+            <li class="teste">Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+        </ul>
+    </div>
+
+    <h2>:only-child</h2>
+    <div>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio blanditiis fuga accusantium! Quae ad magnam
+            possimus ratione distinctio unde amet deleniti, quis doloribus debitis consectetur ab, eaque esse cupiditate
+            quia.
+        </p>
+    </div>
+    <div>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti, ut quaerat! Voluptates provident omnis
+            illo voluptatum soluta obcaecati totam hic nulla voluptatibus commodi iusto libero et, voluptas cum?
+            Dolores, qui?
+        </p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint sit, unde cumque expedita aliquid similique
+            impedit iusto doloremque earum, delectus quas dolores recusandae quisquam sapiente possimus dolor amet
+            soluta dicta!
+        </p>
+    </div>
+</body>
+
+</html>
