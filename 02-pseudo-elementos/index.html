@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-elementos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Pseudo-elementos</h1>
+
+    <div>
+        <h2>::first-letter</h2>
+        <p class="first-letter">
+            <span>E</span>stiliza a primeira letra de determinado elemento. Pode ser aplicado em classes também. Importante mencionar que podemos utilizar mais de uma pseudo-classe para o mesmo seletor.
+        </p>
+    </div>
+
+    <div>
+        <h2>::first-line</h2>
+        <p class="first-line">
+            Estiliza a primeira linha de determinado elemento. Aqui o estilo está sendo aplicado no p de classe "first-line". Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste doloribus unde a ipsam et ea, autem dolorum quas, illum nihil repellendus? Quisquam, expedita? Et nam veniam delectus fugiat, officia soluta?
+        </p>
+    </div>
+
+    <div>
+        <h2>::marker</h2>
+        <p>Estiliza os bullets (pontinhos) dos itens de uma lista:</p>
+            <ul>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+                <li>Item 4</li>
+            </ul>
+    </div>
+
+    <div>
+        <h2>Before</h2>
+        <p>Adiciona algum conteúdo antes de determinado elemento. Por exemplo, é possível inserir textos e imagens através do CSS. No exemplo abaixo colocamos uma imagem antes de todos os elementos h3 da através da declaração "content:url()". Outra possibilidade seria inserir uma imagem antes de todos os elementos com a classe "com-imagem", por exemplo.</p>
+        <p>
+            <h3>Subtítulo 1</h3>
+            <h3>Subtítulo 2</h3>
+            <h3>Subtítulo 3</h3>
+        </p>
+    </div>
+
+    <div>
+        <h2>::after</h2>
+        <p>Ao contrário do ::before, este pseudo-elemento adiciona algum conteúdo após determinado elemento. No exemplo abaixo adicionamos imagens após os subtítulos h4.</p>
+        <h4>Subtítulo 1</h4>
+        <h4>Subtítulo 2</h4>
+        <h4>Subtítulo 3</h4>
+    </div>
+</body>
+</html>
