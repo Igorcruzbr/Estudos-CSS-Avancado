@@ -1,0 +1,22 @@
+.container.direction{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.container div{
+    background-color: aqua;
+    color: orange;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+
+.container.wrap{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container.flow{
+    display: flex;
+    flex-flow: row wrap ;
+}
